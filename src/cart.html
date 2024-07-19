@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-slate-700">
+  <section id="header" class="flex px-20 z-50 bg-white justify-between items-center shadow-black shadow-md sticky top-0">
+    <div>
+      <img class="h-24 w-24" src="./images/logo.jpg" alt="logo">
+    </div>
+    <div>
+      <ul id="navbar" class="flex space-x-4">
+        <li class="hover:font-bold hover:underline"><a href="index.html">Home</a></li>
+        <li class="hover:font-bold hover:underline"><a href="shop.html">Shop</a></li>
+        <li class="hover:font-bold hover:underline"><a href="blog.html">Blog</a></li>
+        <li class="hover:font-bold hover:underline"><a href="about.html">About</a></li>
+        <li class="hover:font-bold hover:underline"><a href="contact.html">Contact</a></li>
+        <li class="hover:font-bold hover:underline">
+          <a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Basket (<span id="basket-counter">0</span>)</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="basket" class="p-4 bg-white">
+    <h2 class="text-3xl font-bold text-black">Your Basket</h2>
+    <div id="basketItems" class="mt-4 space-y-4">
+      <!-- Basket items will be appended here -->
+    </div>
+    <div class="mt-4">
+      <h3 class="text-xl font-bold text-black">Total: Rs <span id="basketTotal">0</span></h3>
+    </div>
+  </section>
+  <script src="./basket.js"></script>
+</body>
+</html>

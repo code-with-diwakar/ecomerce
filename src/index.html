@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+  <!-- Header Section -->
+  <section id="header" class="flex px-20 z-50 bg-white justify-between items-center shadow-md sticky top-0">
+    <div>
+      <img class="h-24 w-24" src="./images/logo.jpg" alt="logo">
+    </div>
+    <div>
+      <ul id="navbar" class="flex space-x-6 text-gray-700 font-semibold">
+        <li class="hover:text-blue-500"><a href="index.html">Home</a></li>
+        <li class="hover:text-blue-500"><a href="shop.html">Shop</a></li>
+        <li class="hover:text-blue-500"><a href="blog.html">Blog</a></li>
+        <li class="hover:text-blue-500"><a href="about.html">About</a></li>
+        <li class="hover:text-blue-500"><a href="contact.html">Contact</a></li>
+        <li class="hover:text-blue-500"><a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Basket</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section id="heroshop" class="my-3 relative h-64 w-full bg-cover bg-center text-center shadow-md border-4 border-black" style="background-image: url('./shop/heroSection.jpg');">
+    <p class="text-7xl text-white font-bold animate-bounce mt-20">WELCOME FOR SHOPPING</p>
+  </section>
+
+  <!-- Features Section with Carousel -->
+   <div class="shadow-md shadow-black">
+   <div class=" ">
+  <section id="features" class="container my-12">
+    <div id="featuresCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-4 feature-item">
+              <img src="./images/features/feature1.jpg" alt="Free Shipping" class="shadow-black shadow-md">
+              <h1 class="bg-red-500 text-white text-center py-2">Free Shipping</h1>
+            </div>
+            <div class="col-md-4 feature-item">
+              <img src="./images/features/feature2.jpg" alt="Online Order" class="shadow-black shadow-md">
+              <h1 class="bg-red-500 text-white text-center py-2">Online Order</h1>
+            </div>
+            <div class="col-md-4 feature-item">
+              <img src="./images/features/feature3.jpg" alt="Happy Sell" class="shadow-black shadow-md">
+              <h1 class="bg-red-500 text-white text-center py-2">Happy Sell</h1>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-4 feature-item">
+              <img src="./images/features/feature4.jpg" alt="Save Money" class="shadow-black shadow-md">
+              <h1 class="bg-red-500 text-white text-center py-2">Save Money</h1>
+            </div>
+            <div class="col-md-4 feature-item">
+              <img src="./images/features/feature5.jpg" alt="24 X 7 support" class="shadow-black shadow-md">
+              <h1 class="bg-red-500 text-white text-center py-2">24 x 7</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <a class="carousel-control-prev" href="#featuresCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#featuresCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Banner Section -->
+  <section id="banner" class="bg-blue-600 text-white text-center py-16 my-12">
+    <div>
+      <h4 class="text-2xl">Repair Service</h4>
+      <h2 class="text-4xl font-bold">Up to <span class="text-yellow-400">70% off</span> on all products</h2>
+      <button id="explore" class="bg-yellow-500 text-black px-4 py-2 mt-4 rounded">Explore Now</button>
+    </div>
+  </section>
+
+  <!-- Featured Products Section with Carousel -->
+  <section class="featured-product container my-12">
+    <h2 class="text-4xl text-gray-800 font-bold text-center">Featured Products</h2>
+    <p class="text-lg text-gray-500 text-center my-4">Best collections for all of you</p>
+    <div id="featuredProductsCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-3 product-item">
+              <img src="./images/product/shiirt1.jpg" alt="Goa Shirt" class="w-full h-48 object-cover shadow-md shadow-black">
+              <div class="p-4 text-center">
+                <span class="text-gray-500">Levis</span>
+                <h1 class="text-xl font-semibold">Goa Shirt</h1>
+                <h1 class="text-lg text-gray-700">Rs-7599</h1>
+                <div class="flex justify-center space-x-1 my-2 text-yellow-500">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded">BUY NOW</button>
+              </div>
+            </div>
+            <div class="col-md-3 product-item">
+              <img src="./images/product/shirt2.jpg" alt="Goa Shirt" class="w-full h-48 object-cover shadow-md shadow-black">
+              <div class="p-4 text-center">
+                <span class="text-gray-500">Levis</span>
+                <h1 class="text-xl font-semibold">Goa Shirt</h1>
+                <h1 class="text-lg text-gray-700">Rs-3599</h1>
+                <div class="flex justify-center space-x-1 my-2 text-yellow-500">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded">BUY NOW</button>
+              </div>
+            </div>
+            <div class="col-md-3 product-item">
+              <img src="./images/product/shirt3.jpg" alt="Casual Shirt" class="w-full h-48 object-cover shadow-md shadow-black">
+              <div class="p-4 text-center">
+                <span class="text-gray-500">Levis</span>
+                <h1 class="text-xl font-semibold">Casual Shirt</h1>
+                <h1 class="text-lg text-gray-700">Rs-11599</h1>
+                <div class="flex justify-center space-x-1 my-2 text-yellow-500">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded">BUY NOW</button>
+              </div>
+            </div>
+            <div class="col-md-3 product-item">
+              <img src="./images/product/couplecombo.jpg" alt="Formal" class="w-full h-48 object-cover">
+              <div class="p-4 text-center">
+                <span class="text-gray-500">USPolo</span>
+                <h1 class="text-xl font-semibold">Formal</h1>
+                <h1 class="text-lg text-gray-700">Rs-2589</h1>
+                <div class="flex justify-center space-x-1 my-2 text-yellow-500">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded">BUY NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-3 product-item">
+              <img src="./images/product/couplecombo1.jpg" alt="Couple Shirt" class="w-full h-48 object-cover">
+              <div class="p-4 text-center">
+                <span class="text-gray-500">Woodland</span>
+                <h1 class="text-xl font-semibold">Couple Shirt</h1>
+                <h1 class="text-lg text-gray-700">Rs-15999</h1>
+                <div class="flex justify-center space-x-1 my-2 text-yellow-500">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded">BUY NOW</button>
+              </div>
+            </div>
+            <div class="col-md-3 product-item">
+              <img src="./images/product/girltshirt.jpg" alt="Casual" class="w-full h-48 object-cover">
+              <div class="p-4 text-center">
+                <span class="text-gray-500">GUchi</span>
+                <h1 class="text-xl font-semibold">Casual</h1>
+                <h1 class="text-lg text-gray-700">Rs-2599</h1>
+                <div class="flex justify-center space-x-1 my-2 text-yellow-500">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded">BUY NOW</button>
+              </div>
+            </div>
+            <div class="col-md-3 product-item">
+              <img src="./images/product/malecouples.jpg" alt="Male Couple" class="w-full h-48 object-cover">
+              <div class="p-4 text-center">
+                <span class="text-gray-500">Zara</span>
+                <h1 class="text-xl font-semibold">Male Couple</h1>
+                <h1 class="text-lg text-gray-700">Rs-11599</h1>
+                <div class="flex justify-center space-x-1 my-2 text-yellow-500">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded">BUY NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#featuredProductsCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#featuredProductsCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Feedback Section -->
+  <section id="Feedback" class="relative h-60 w-full bg-cover bg-center shadow-black text-center shadow-md my-6 text-3xl text-blue-700" style="background-image: url('./newarrival/feedback.jpg');">
+    <input id="input" class="bg-white text-black p-2 rounded-md border-solid border-2 border-gray-300 my-4" placeholder="Enter your feedback">
+    <button id="btnn" class="bg-blue-500 text-white px-4 py-2 rounded-md border-solid border-2 border-gray-300">Submit</button>
+    <strong  id="feed" class="text-3xl font-bold text-center hidden">Thankyou so much for your Valuable Feedback</strong>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+      <div>
+        <img class="h-24 w-24 mb-4" src="./images/logo.jpg" alt="logo">
+        <h4 class="text-lg font-semibold">Contact</h4>
+        <p class="text-sm">Kanakpura Road near Forum Mall, Bangalore-56008</p>
+        <p class="text-sm">Phone: +91-8529-8127-05</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold">Follow Us</h4>
+        <div class="flex space-x-4 text-2xl mt-2">
+          <i class="fab fa-youtube cursor-pointer hover:text-red-600"></i>
+          <i class="fab fa-facebook cursor-pointer hover:text-blue-600"></i>
+          <i class="fab fa-instagram cursor-pointer hover:text-pink-600"></i>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold">Quick Links</h4>
+        <ul class="text-sm mt-2 space-y-1">
+          <li><a href="about.html" class="hover:underline">About Us</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+          <li><a href="privacy.html" class="hover:underline">Privacy Policy</a></li>
+          <li><a href="terms.html" class="hover:underline">Terms and Conditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold">Install App</h4>
+        <div class="flex space-x-4 text-2xl mt-2">
+          <i class="fab fa-google-play cursor-pointer hover:text-green-600"></i>
+          <i class="fab fa-app-store-ios cursor-pointer hover:text-blue-600"></i>
+          <i class="fab fa-apple cursor-pointer hover:text-gray-600"></i>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold">Payment Method</h4>
+        <div class="flex space-x-4 text-2xl mt-2">
+          <i class="fas fa-credit-card cursor-pointer hover:text-yellow-600"></i>
+          <i class="fas fa-money-bill-wave cursor-pointer hover:text-green-600"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./basket.js"></script>
+  <script>
+    let input=document.getElementById("input");
+    let feed=document.getElementById("feed")
+    btnn.addEventListener('click',function(){
+      feed.classList.remove("hidden")
+      input.classList.add("hidden")
+  
+  })
+  </script>
+  <script>
+    let explore=document.getElementById("explore")
+    explore.addEventListener("click",function(){
+      window.location.replace('shop.html');
+    })
+  </script>
+</body>
+</html>
