@@ -3,11 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .counter {
+      position: absolute;
+      top: -5px;
+      right: -10px;
+      background-color: #f56565;
+      color: white;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-size: 12px;
+    }
+  </style>
 </head>
-<body class="bg-amber-400">
-  <section id="header" class="flex px-20 z-50 bg-white justify-between items-center shadow-black shadow-md sticky top-0">
+<body class="bg-slate-500 text-white">
+  <section id="header" class="flex px-20 z-50 bg-white text-black justify-between items-center shadow-md sticky top-0">
     <div>
       <img class="h-24 w-24" src="./images/logo.jpg" alt="logo">
     </div>
@@ -18,92 +30,96 @@
         <li class="hover:font-bold hover:underline"><a href="blog.html">Blog</a></li>
         <li class="hover:font-bold hover:underline"><a href="about.html">About</a></li>
         <li class="hover:font-bold hover:underline"><a href="contact.html">Contact</a></li>
-        <li class="hover:font-bold hover:underline"><a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Basket</a></li>
+        <li class="hover:font-bold hover:underline relative inline-block">
+          <a href="cart.html" class="relative">
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+            <span id="basket-counter" class="counter">0</span>
+            <span class="ml-2">Basket</span>
+          </a>
+        </li>
       </ul>
     </div>
   </section>
 
-  <section id="heroshop" class="my-3 relative h-96 w-full bg-cover bg-center text-center shadow-black shadow-md border-4 border-black" style="background-image: url('./images/aobout.jpg');">
-    <p class="text-7xl text-red-800 "><strong>ABOUT US</strong></p>
+  <section id="heroshop" class="my-3 relative h-96 w-full bg-cover bg-center text-center shadow-md border-4 border-black" style="background-image: url('./images/about.jpg');">
+    <p class="text-7xl text-red-800 font-bold mt-32">ABOUT US</p>
   </section>
 
-  <br>
-  <p class="text-2xl text-red-900 font-bold">Shopping on Ekart for clothes offers a seamless and convenient experience with a wide variety of styles for every occasion. From trendy outfits to timeless classics, Ekart's extensive collection caters to diverse fashion preferences. The platform ensures quality with detailed product descriptions and customer reviews. Easy navigation and secure payment options make the shopping process smooth. With frequent discounts and fast delivery, Ekart provides great value for fashion enthusiasts.</p>
- 
+  <div class="px-20 py-10">
+    <p class="text-2xl text-red-900 font-bold">Shopping on Ekart for clothes offers a seamless and convenient experience with a wide variety of styles for every occasion. From trendy outfits to timeless classics, Ekart's extensive collection caters to diverse fashion preferences. The platform ensures quality with detailed product descriptions and customer reviews. Easy navigation and secure payment options make the shopping process smooth. With frequent discounts and fast delivery, Ekart provides great value for fashion enthusiasts.</p>
+  </div>
 
-  <section id="Feedback" class="relative h-60 w-full bg-cover bg-center shadow-black text-center shadow-md my-6 text-3xl text-blue-700" style="background-image: url('./newarrival/feedback.jpg');">
-    <input class="bg-slate-800 border-2 border-black">
-    <button class="bg-slate-800 border-2 border-black">Submit</button>
-  </section>
-
-  <footer class="grid grid-cols-5 gap-4">
-    <div>
-      <img class="h-24 w-24" src="./images/logo.jpg" alt="logo">
-      <h4>Contact</h4>
-      <h4><strong>Address:</strong> Kanakpura Road near Forum Mall, Bangalore-56008</h4>
-      <h4><strong>Phone no:</strong> +91-8529-8127-05</h4>
+  <section id="Feedback" class="relative h-60 w-full bg-cover bg-center shadow-md my-6 text-3xl text-blue-700" style="background-image: url('./newarrival/feedback.jpg');">
+    <div class="flex flex-col items-center justify-center h-full">
+      <input class="bg-gray-800 text-white border-2 border-black p-2 mb-4 w-1/2" placeholder="Your feedback">
+      <button class="bg-gray-800 text-white border-2 border-black px-4 py-2">Submit</button>
     </div>
+  </section>
 
-    <div class="row-span-1">
-      <div class="icons text-3xl">
-        <p>FOLLOW US:</p>
-        <i id="youtube" class="fa-brands fa-youtube"></i>
-        <i id="facebook" class="fa-brands fa-facebook"></i>
-        <i id="instagram" class="fa-brands fa-instagram"></i>
+  <footer class="grid grid-cols-1 md:grid-cols-5 gap-4 px-20 py-10 bg-gray-800 text-white">
+    <div class="col-span-1">
+      <img class="h-24 w-24 mb-4" src="./images/logo.jpg" alt="logo">
+      <h4 class="font-bold">Contact</h4>
+      <p><strong>Address:</strong> Kanakpura Road near Forum Mall, Bangalore-56008</p>
+      <p><strong>Phone:</strong> +91-8529-8127-05</p>
+    </div>
+    <div class="col-span-1 flex flex-col">
+      <p class="font-bold mb-2">FOLLOW US:</p>
+      <div class="flex space-x-4 text-3xl">
+        <i id="youtube" class="fab fa-youtube cursor-pointer"></i>
+        <i id="facebook" class="fab fa-facebook cursor-pointer"></i>
+        <i id="instagram" class="fab fa-instagram cursor-pointer"></i>
       </div>
     </div>
-
-    <div class="row-span-1">
-      <h6><strong>About us:</strong> About us</h6>
-      <h6>Contact us</h6>
-      <h2>Privacy policy</h2>
-      <h2>Terms and Conditions</h2>
+    <div class="col-span-1">
+      <h4 class="font-bold mb-2">Information</h4>
+      <p>About Us</p>
+      <p>Contact Us</p>
+      <p>Privacy Policy</p>
+      <p>Terms and Conditions</p>
     </div>
-
-    <div class="row-span-1 text-3xl">
-      <h6><strong>Install App</strong></h6>
-      <i id="play" class="fa-brands fa-google-play"></i>
-      <i id="ios" class="fa-brands fa-app-store-ios"></i>
-      <i class="fa-brands fa-apple"></i>
+    <div class="col-span-1">
+      <h4 class="font-bold mb-2">Install App</h4>
+      <div class="flex space-x-4 text-3xl">
+        <i id="play" class="fab fa-google-play cursor-pointer"></i>
+        <i id="ios" class="fab fa-app-store-ios cursor-pointer"></i>
+      </div>
     </div>
-
-    <div class="row-span-1 text-3xl">
-      <strong><p>Payment Method</p></strong>
-      <i class="fas fa-credit-card"></i>
-      <i class="fa-sharp-duotone fa-solid fa-money-bill-1-wave"></i>
+    <div class="col-span-1">
+      <h4 class="font-bold mb-2">Payment Method</h4>
+      <div class="flex space-x-4 text-3xl">
+        <i class="fas fa-credit-card"></i>
+        <i class="fas fa-money-bill-wave"></i>
+      </div>
     </div>
   </footer>
   <script>
-    
+    let facebook = document.getElementById("facebook");
+    let instagram = document.getElementById("instagram");
+    let youtube = document.getElementById("youtube");
 
-let facebook=document.getElementById("facebook");
+    youtube.addEventListener('click', function() {
+        window.location.href = "https://www.youtube.com/watch?v=B-OBVsaV7A0";
+    });
 
-let instagram=document.getElementById("instagram");
+    instagram.addEventListener('click',function(){
+        window.location.href="https://www.instagram.com/?hl=en"
+    });
 
-let youtube = document.getElementById("youtube");
+    facebook.addEventListener('click',function(){
+        window.location.href="https://www.facebook.com/"
+    });
 
-youtube.addEventListener('click', function() {
-    window.location.href = "https://www.youtube.com/watch?v=B-OBVsaV7A0";
-});
+    let play = document.getElementById("play");
+    let ios = document.getElementById("ios");
 
-instagram.addEventListener('click',function(){
-    window.location.href="https://www.instagram.com/?hl=en"
-})
+    play.addEventListener('click',function(){
+        window.location.href="https://play.google.com/store/games?device=windows"
+    });
 
-facebook.addEventListener('click',function(){
-    window.location.href="https://www.facebook.com/"
-})
-
-let play=document.getElementById("play");
-let ios=document.getElementById("ios");
-
-play.addEventListener('click',function(){
-    window.location.href="https://play.google.com/store/games?device=windows"
-})
-
-ios.addEventListener('click',function(){
-    window.location.href="https://www.apple.com/in/app-store/"
-})
+    ios.addEventListener('click',function(){
+        window.location.href="https://www.apple.com/in/app-store/"
+    });
   </script>
 </body>
 </html>

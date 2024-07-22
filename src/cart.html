@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .counter {
+      position: absolute;
+      top: -12px;
+      right: -20px;
+      background-color: #f56565;
+      color: white;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-size: 12px;
+    }
+  </style>
 </head>
 <body class="bg-slate-700">
   <section id="header" class="flex px-20 z-50 bg-white justify-between items-center shadow-black shadow-md sticky top-0">
@@ -18,8 +30,13 @@
         <li class="hover:font-bold hover:underline"><a href="blog.html">Blog</a></li>
         <li class="hover:font-bold hover:underline"><a href="about.html">About</a></li>
         <li class="hover:font-bold hover:underline"><a href="contact.html">Contact</a></li>
-        <li class="hover:font-bold hover:underline">
-          <a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Basket (<span id="basket-counter">0</span>)</a>
+        <li class="hover:font-bold hover:underline relative inline-block">
+          <a href="cart.html" class="relative">
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+            <span class="ml-2">Basket</span>
+            <span id="basket-counter" class="counter ">0</span>
+           
+          </a>
         </li>
       </ul>
     </div>
@@ -30,9 +47,13 @@
       <!-- Basket items will be appended here -->
     </div>
     <div class="mt-4">
+      
       <h3 class="text-xl font-bold text-black">Total: Rs <span id="basketTotal">0</span></h3>
+      <button id="btn" class="border-2 border-gray-950 bg-slate-600 hover:bg-red-700">Click For Pay</button>
     </div>
+
   </section>
-  <script src="./basket.js"></script>
+ 
+  <script src="basket.js"></script> <!-- Link to the external JavaScript file -->
 </body>
 </html>

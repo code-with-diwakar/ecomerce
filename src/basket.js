@@ -115,3 +115,10 @@ document.addEventListener('DOMContentLoaded', function() {
         updateBasketUI();
     }
 });
+let btn=document.getElementById('btn');
+
+btn.addEventListener('click',function(){
+
+    prompt("Enter your upi id");
+    alert("Invalid UPI id please try after some time")
+})
